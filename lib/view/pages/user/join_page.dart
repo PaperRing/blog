@@ -35,9 +35,9 @@ class JoinPage extends StatelessWidget {
       key: _formKey,
       child: Column(
         children: [
-          CustomTextFormField(hint: "Username", funValidator: username_validate()),
-          CustomTextFormField(hint: "Password", funValidator: password_validate()),
-          CustomTextFormField(hint: "Email", funValidator: email_validate()),
+          CustomTextFormField(hint: "Username", funValidator: validateUsername()),
+          CustomTextFormField(hint: "Password", funValidator: validatePassword()),
+          CustomTextFormField(hint: "Email", funValidator: validateEmail()),
           CustomElevatedButton(
             text: 'Join Us',
             funPageRoute: () {

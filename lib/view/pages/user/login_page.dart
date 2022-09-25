@@ -34,8 +34,8 @@ class LoginPage extends StatelessWidget {
       key: _formKey,
       child: Column(
         children: [
-          CustomTextFormField(hint: "Username", funValidator: username_validate()),
-          CustomTextFormField(hint: "Password", funValidator: password_validate()),
+          CustomTextFormField(hint: "Username", funValidator: validateUsername()),
+          CustomTextFormField(hint: "Password", funValidator: validatePassword()),
           CustomElevatedButton(
             text: 'Sign in',
             funPageRoute: () {
