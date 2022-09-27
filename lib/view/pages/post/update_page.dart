@@ -1,10 +1,11 @@
-import 'package:blog/component/custom_elevated_buttom.dart';
-import 'package:blog/component/custom_text_area.dart';
-import 'package:blog/component/custom_text_form_field.dart';
 import 'package:blog/util/validator.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+
+import '../../component/custom_elevated_buttom.dart';
+import '../../component/custom_text_area.dart';
+import '../../component/custom_text_form_field.dart';
 
 class UpdatePage extends StatelessWidget {
   final _formKey = GlobalKey<FormState>();

@@ -1,6 +1,6 @@
 import 'package:validators/validators.dart';
 
-Function username_validate() {
+Function validateUsername() {
   return (String? value) {
     if (value!.isEmpty) {
       return "공백이 들어갈 수 없습니다.";
@@ -12,7 +12,7 @@ Function username_validate() {
   };
 }
 
-Function password_validate() {
+Function validatePassword() {
   return (String? value) {
     if (value!.isEmpty) {
       return "공백이 들어갈 수 없습니다.";
@@ -28,12 +28,36 @@ Function password_validate() {
   };
 }
 
-Function email_validate() {
+Function validateEmail() {
   return (String? value) {
     if (value!.isEmpty) {
       return "공백이 들어갈 수 없습니다.";
     } else if (!isEmail(value)) {
       return "이메일 형식에 맞지 않습니다.";
+    } else {
+      return null;
+    }
+  };
+}
+
+Function validateTitle() {
+  return (String? value) {
+    if (value!.isEmpty) {
+      return "공백이 들어갈 수 없습니다.";
+    } else if (value.length > 50) {
+      return "제목의 길이를 초과하였습니다.";
+    } else {
+      return null;
+    }
+  };
+}
+
+Function validateContent() {
+  return (String? value) {
+    if (value!.isEmpty) {
+      return "공백이 들어갈 수 없습니다.";
+    } else if (value.length > 1000) {
+      return "제목의 길이를 초과하였습니다.";
     } else {
       return null;
     }

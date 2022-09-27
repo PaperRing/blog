@@ -1,11 +1,12 @@
-import 'package:blog/component/custom_elevated_buttom.dart';
-import 'package:blog/component/custom_text_area.dart';
-import 'package:blog/component/custom_text_form_field.dart';
-import 'package:blog/pages/post/home_page.dart';
 import 'package:blog/util/validator.dart';
+import 'package:blog/view/component/custom_text_form_field.dart';
+import 'package:blog/view/pages/post/home_page.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+
+import '../../component/custom_elevated_buttom.dart';
+import '../../component/custom_text_area.dart';
 
 class WritePage extends StatelessWidget {
   final _formKey = GlobalKey<FormState>();

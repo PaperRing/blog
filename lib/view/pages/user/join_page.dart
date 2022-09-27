@@ -1,5 +1,5 @@
-import 'package:blog/pages/user/login_page.dart';
 import 'package:blog/util/validator.dart';
+import 'package:blog/view/pages/user/login_page.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -46,6 +46,11 @@ class JoinPage extends StatelessWidget {
               }
             },
           ),
+          TextButton(
+              onPressed: () {
+                Get.to(JoinPage());
+              },
+              child: Text("로그인"))
         ],
       ),
     );
